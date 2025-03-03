@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "flowcontrol",
+  "version": "1.0",
+
+  "description": "Manage speed of youtube videos with shortcuts",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/main/beastify",
+  "icons": {
+    "48": "flow.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["flowjs.js"]
+    }
+  ]
+}
+
